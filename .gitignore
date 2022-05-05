@@ -1,5 +1,8 @@
 node_modules
 
+#tailwind
+app/styles/app.css
+
 .cache
 .env
 .vercel
