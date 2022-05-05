@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  @layer responsive {
+    .text-shadow-blue {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #2d5a92,
+        0 0 40px #2d5a92;
+    }
+    .text-shadow-yellow {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #a5871d,
+        0 0 40px #a5871d;
+    }
+    .text-shadow-green {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #4d8e4b,
+        0 0 40px #4d8e4b;
+    }
+    .text-shadow-red {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d3303d,
+        0 0 40px #d3303d;
+    }
+    .text-shadow-pink {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #8c3188,
+        0 0 40px #8c3188;
+    }
+    .text-shadow-none {
+      text-shadow: none;
+    }
+  }
+}
+
+* {
+  background-color: #121212;
+  font-family: monospace;
+}
