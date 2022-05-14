@@ -31,6 +31,17 @@ export default function Frames({ selectedImage }: PropTypes) {
       >
         Circle
       </Link>
+      <Link
+        className={`rounded px-2 py-1 text-lg font-bold text-white ${
+          matches.some((route) => route.pathname.endsWith("circle_pink"))
+            ? "border-2 border-white bg-fuchsia-500"
+            : "border border-gray-200"
+        }`}
+        to="circle_pink"
+        state={{ image: selectedImage }}
+      >
+        Circle Pink
+      </Link>
     </div>
   );
 }
