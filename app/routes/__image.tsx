@@ -3,6 +3,7 @@ import * as htmlToImage from "html-to-image";
 import { useState } from "react";
 import Frames from "~/components/frames";
 import ImageUpload from "~/components/imageUpload";
+import MadeBy from "~/components/MadeBy";
 
 function saveAs(blob: string, fileName: string) {
   var elem = window.document.createElement("a");
@@ -41,7 +42,7 @@ export default function image() {
   return (
     <>
       <div className="mt-12 flex flex-col items-center space-y-5">
-        <h1 className="text-5xl ">
+        <h1 className="text-3xl lg:text-5xl">
           <span className="text-shadow-blue text-cyan-200 focus:outline-none">
             Remix
           </span>{" "}
@@ -92,6 +93,7 @@ export default function image() {
             </ImageUpload>
           </>
         )}
+        <MadeBy />
       </div>
     </>
   );
